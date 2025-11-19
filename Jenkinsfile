@@ -46,7 +46,7 @@ pipeline {
             // 2. CORRECTION DU BLOC POST : Remplacement du 'stage' par un bloc 'script'
             script {
                 // Définition de la variable de Tag ici, où ${BUILD_NUMBER} est disponible
-                def TAG_TO_PUSH = "V-2.0.${env.BUILD_NUMBER}"
+                def TAG_TO_PUSH = "V-3.0.${env.BUILD_NUMBER}"
                 
                 echo "Build successful. Pushing tag: ${TAG_TO_PUSH} to remote: ${env.TARGET_REMOTE}"
                 
